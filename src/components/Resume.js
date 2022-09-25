@@ -15,11 +15,8 @@ const Resume = () => {
 const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	box-shadow: -10px -10px 30px 0px #ffffff, 10px 10px 30px 0px #1d0dca17;
 	border-radius: 54px;
-	padding: 44px;
-	margin-top: 44px;
-	background: ${neveColors.white};
+	background: ${neveColors.darkBlue};
 `;
 
 const Title = styled.div`
@@ -28,13 +25,12 @@ const Title = styled.div`
 	justify-content: flex-start;
 	align-items: center;
 	font-size: 1.5rem;
-	margin: 20px 0px;
-	color: ${neveColors.darkBlue};
+	color: ${neveColors.white};
 `;
 
 const DateRange = styled.p`
 	font-size: 1rem;
-	margin: 0px 0px 0px 20px;
+	margin-left: 20px;
 	color: ${neveColors.red};
 `;
 

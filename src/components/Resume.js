@@ -24,21 +24,19 @@ const Title = styled.div`
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	color: ${neveColors.white};
-
-	@media (max-width: 768px) {
-		font-size: 1rem;
-	}
+	font-family: 'Roboto', sans-serif;
 `;
 
 const DateRange = styled.p`
 	font-size: 1rem;
-	margin: 15px 20px;
+	margin: 15px 10px;
 	color: ${neveColors.lightBlue};
+	font-family: 'Roboto', sans-serif;
 
 	@media (max-width: 768px) {
-		margin: 10px 10px;
+		margin: 10px 7px;
 	}
 `;
 

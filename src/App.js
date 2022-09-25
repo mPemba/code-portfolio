@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { neveColors } from './library/colors';
 import { Resume } from './components/Resume';
 
@@ -23,33 +23,9 @@ const App = () => {
   );
 }
 
-const TitleAnimation = keyframes`
-  0% {
-    background-size: 100%;
-  }
-  80% {
-    background-size: 650%;
-  }
-  100% {
-    background-size: 650%;
-  }
-`;
-
-const TitleAnimationReverse = keyframes`
-  0% {
-    background-size: 650%;
-  }
-  40% {
-    background-size: 650%;
-  }
-  100% {
-    background-size: 100%;
-  }
-`;
-
 const Main = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,40 +38,41 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   background: ${neveColors.darkBlue};
-  border-radius: 54px;
   padding: 44px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 90%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 22px;
+  }
 `;
 
 const Name = styled.h1`
   font-size: 4em;
   margin: 0px;
-  background-color: ${neveColors.darkBlue};
-  background-size: 100%;
-  background-repeat: repeat;
-  background-image: linear-gradient(
-    45deg,
-    ${neveColors.white} 16.666%, 
-    ${neveColors.lightBlue} 16.666%, 
-    ${neveColors.lightBlue} 33.333%, 
-    ${neveColors.red} 33.333%, 
-    ${neveColors.red} 50%, 
-    ${neveColors.white} 50%, 
-    ${neveColors.white} 66.666%, 
-    ${neveColors.lightBlue} 66.666%, 
-    ${neveColors.lightBlue} 83.333%, 
-    ${neveColors.red} 83.333%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  animation: ${TitleAnimationReverse} 2.75s ease forwards;
-  &:hover {
-    animation: ${TitleAnimation} 1.5s ease-in forwards;
+  color: ${neveColors.white};s
+
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5em;
   }
 `;
 
 const Title = styled.h4`
+  width: fit-content;
   font-size: 1.5rem;
-  margin: 10px 0px;
+  margin: 15px 0px;
   color: ${neveColors.white};
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 const Links = styled.div`

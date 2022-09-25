@@ -1,8 +1,9 @@
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { neveColors } from './library/colors';
 import { Resume } from './components/Resume';
 
-function App() {
+const App = () => {
   return (
     <Main>
       <Content>

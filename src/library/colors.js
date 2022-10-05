@@ -3,7 +3,7 @@ const neveColors = {
     darkGrey: '#39454E',
     darkBlue: '#2A3948',
     lightBlue: '#72A8E0',
-    red: '#9A424D',
+    red: '#a14853',
 };
 
 export { neveColors };

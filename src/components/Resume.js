@@ -3,48 +3,47 @@ import styled from 'styled-components';
 import { colors } from '../library/colors';
 
 const Resume = () => {
+	const data = [
+		{
+			company: 'PLURALSIGHT',
+			dateRange: '2021 - Present',
+			description: 'Currently building full stack applications for content production and tooling.',
+		},
+		{
+			company: 'A CLOUD GURU',
+			dateRange: '2020 - 2021',
+			description:
+				'Worked on the One Platform Assessments team and helped build the quiz and exam student experiences. Also helped build the B2B checkout experience.',
+		},
+		{
+			company: 'LINUX ACADEMY',
+			dateRange: '2019 - 2020',
+			description:
+				'Rebuilt an internal app called CloudCraft for content production. Also helped maintain the commuity engagement experience.',
+		},
+		{
+			company: 'FREEMAN',
+			dateRange: '2017 - 2019',
+			description:
+				'Running shows using our presentation software. Helped build an event data system for the company. Lead Engineer on Cumulus, an application for event management at hotels.',
+		},
+		{
+			company: 'KLOWD',
+			dateRange: '2015 - 2017',
+			description: 'Maintaining and building features for SlideKlowd, a presentation application in the browser.',
+		},
+	];
+
 	return (
 		<Container>
 			<Column>
-				<Item>
-					<Company>PLURALSIGHT</Company>
-					<DateRange>
-						2021 - <Present>Present</Present>
-					</DateRange>
-					<Description>
-						Currently building full stack applications for content production and tooling.
-					</Description>
-				</Item>
-				<Item>
-					<Company>A CLOUD GURU</Company>
-					<DateRange>2020 - 2021</DateRange>
-					<Description>
-						Worked on the One Platform Assessments team and helped build the quiz and exam student experiences. Also helped build the B2B checkout experience.
-					</Description>
-				</Item>
-				<Item>
-					<Company>LINUX ACADEMY</Company>
-					<DateRange>2019 - 2020</DateRange>
-					<Description>
-						Rebuilt an internal app called CloudCraft for content production. Also helped maintain the commuity engagement experience.
-					</Description>
-				</Item>
-				<Item>
-					<Company>FREEMAN</Company>
-					<DateRange>2017 - 2019</DateRange>
-					<Description>
-						Running shows using our presentation software.
-						Helped build an event data system for the company.
-						Lead Engineer on Cumulus, an application for event management at hotels.
-					</Description>
-				</Item>
-				<Item>
-					<Company>KLOWD</Company>
-					<DateRange>2015 - 2019</DateRange>
-					<Description>
-						Maintaining and building features for SlideKlowd, a presentation application in the browser.
-					</Description>
-				</Item>
+				{data.map((item, index) => (
+					<Item key={index}>
+						<Company>{item.company}</Company>
+						{item.company === 'PLURALSIGHT' ? (<DateRange>2021 - <Present>Present</Present></DateRange>) : (<DateRange>{item.dateRange}</DateRange>)}
+						<Description>{item.description}</Description>
+					</Item>
+				))}
 			</Column>
 		</Container>
 	);

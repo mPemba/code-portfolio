@@ -19,3 +19,9 @@ test('renders my resume', () => {
   const linkElement = screen.getByText(/Pluralsight/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('renders my about me', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/About Me/i);
+  expect(linkElement).toBeInTheDocument();
+});

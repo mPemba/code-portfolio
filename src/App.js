@@ -48,7 +48,7 @@ const Name = styled.h1`
   }
 `;
 
-const Title = styled.h4`
+const Title = styled.h2`
   width: fit-content;
   font-size: 16px;
   font-family: 'Hanken Grotesk', sans-serif;

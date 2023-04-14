@@ -45,6 +45,7 @@ const Content = styled.div`
 
 const Name = styled.h1`
   font-size: 40px;
+  line-height: 44px;
   margin: 0px 0px 0px 100px;
   color: ${colors.text};
 
@@ -59,12 +60,12 @@ const Title = styled.h4`
   font-size: 16px;
   font-family: 'Hanken Grotesk', sans-serif;
   font-weight: 400;
-  margin: 15px 0px 30px 100px;
+  margin: 15px 0px 40px 100px;
   color: ${colors.text};
 
   @media (max-width: 480px) {
     width: 50%;
-    margin: 15px 0px 30px 80px;
+    margin: 15px 0px 40px 80px;
   }
 `;
 
@@ -137,6 +138,7 @@ const AboutMeHeader = styled(Name)`
 const AboutMe = styled.p`
   width: 20%;
   font-size: 14px;
+  line-height: 20px;
   margin: 50px 0px 200px 260px;
   font-family: 'Hanken Grotesk', sans-serif;
 

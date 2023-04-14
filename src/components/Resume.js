@@ -95,7 +95,7 @@ const Company = styled.span`
 
 const DateRange = styled.p`
 	font-size: 14px;
-	margin: 15px 0px 0px 0px;
+	margin: 8px 0px 8px 0px;
 	color: ${colors.text};
 	font-family: 'Hanken Grotesk', sans-serif;
 `;
@@ -108,7 +108,7 @@ const Present = styled.span`
 
 const Description = styled.p`
 	font-size: 14px;
-	margin: 5px 0px;
+	margin: 0px;
 	font-family: 'Hanken Grotesk', sans-serif;
 `;
 

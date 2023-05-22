@@ -15,7 +15,14 @@ const AboutMe = () => {
 				</Link>
 			</Links>
 			<About>
-				Currently living in Salt Lake City. I enjoy building things with people I love. I also enjoy <span><MusicLink href="https://www.michaeljsayer.com/" target="_blank" rel="noopener noreferrer"s>making music.</MusicLink></span>
+        Residing in Salt Lake City, I find immense joy in collaborative creation with like-minded individuals. 
+        Building meaningful projects alongside cherished colleagues is a fulfilling endeavor that fuels my passion. 
+        Outside of the software realm, I indulge in the art of 
+        <span>
+          <MusicLink href="https://www.michaeljsayer.com/" target="_blank" rel="noopener noreferrer">
+            making music
+          </MusicLink>
+        </span>, which brings me great delight and serves as an outlet for my creativity.
 			</About>
 		</>
 	);
@@ -25,11 +32,7 @@ const Links = styled.div`
   display: flex;
   gap: 20px;
   width: 20%;
-  margin: 10px 0px 0px 180px;
-
-  @media (max-width: 768px) {
-    margin: 10px 0px 0px 150px;
-  }
+  margin: 10px 0px 0px 100px;
 
   @media (max-width: 480px) {
     width: 50%;
@@ -62,6 +65,7 @@ const MusicLink = styled.a`
 	color: ${colors.text};
 	background: ${colors.background};
 	font-family: 'Hanken Grotesk', sans-serif;
+  margin-left: 4px;
 
 	&:hover {
 			color: ${colors.blue};
@@ -75,14 +79,10 @@ const Logo = styled.img`
 `;
 
 const AboutMeHeader = styled.h2`
-  font-size: 40px;
+  font-size: 32px;
   line-height: 44px;
   color: ${colors.text};
-  margin: 100px 0px 0px 180px;
-
-  @media (max-width: 768px) {
-    margin: 100px 0px 0px 150px;
-  }
+  margin: 100px 0px 0px 100px;
 
   @media (max-width: 480px) {
     width: 50%;
@@ -91,24 +91,15 @@ const AboutMeHeader = styled.h2`
 `;
 
 const About = styled.p`
-  width: 20%;
+  width: 30%;
   font-size: 14px;
   line-height: 20px;
-  margin: 50px 0px 200px 260px;
+  margin: 25px 0px 200px 100px;
   font-family: 'Hanken Grotesk', sans-serif;
-
-  @media (max-width: 768px) {
-    margin: 50px 0px 200px 180px;
-  }
-
-	@media (max-width: 600px) {
-		width: 35%;
-    margin: 50px 0px 200px 150px;
-  }
 
   @media (max-width: 480px) {
     width: 50%;
-    margin: 50px 0px 200px 80px;
+    margin: 25px 0px 200px 80px;
   }
 `;
 

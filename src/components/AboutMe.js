@@ -3,29 +3,29 @@ import styled from 'styled-components';
 import { colors } from '../library/colors';
 
 const AboutMe = () => {
-	return (
-		<>
-			<AboutMeHeader>ABOUT ME</AboutMeHeader>
-			<Links>
-				<Link href="https://www.linkedin.com/in/mikesayer/" target="_blank" rel="noopener noreferrer">
-						<Logo src="/linkedin.svg" alt="linkedin" />
-				</Link>
-				<Link href="https://github.com/mPemba" target="_blank" rel="noopener noreferrer">
-						<Logo src="/github.svg"  alt="github" />
-				</Link>
-			</Links>
-			<About>
-        Residing in Salt Lake City, I find immense joy in collaborative creation with like-minded individuals. 
-        Building meaningful projects alongside cherished colleagues is a fulfilling endeavor that fuels my passion. 
-        Outside of the software realm, I indulge in the art of 
+  return (
+    <>
+      <AboutMeHeader>ABOUT ME</AboutMeHeader>
+      <Links>
+        <Link href="https://www.linkedin.com/in/mikesayer/" target="_blank" rel="noopener noreferrer">
+          <Logo src="/linkedin.svg" alt="linkedin" />
+        </Link>
+        <Link href="https://github.com/mPemba" target="_blank" rel="noopener noreferrer">
+          <Logo src="/github.svg" alt="github" />
+        </Link>
+      </Links>
+      <About>
+        Residing in Salt Lake City, I find immense joy in collaborative creation with like-minded individuals.
+        Building meaningful projects alongside cherished colleagues is a fulfilling endeavor that fuels my passion.
+        Outside of the software realm, I indulge in the art of
         <span>
           <MusicLink href="https://www.michaeljsayer.com/" target="_blank" rel="noopener noreferrer">
             making music
           </MusicLink>
         </span>, which brings me great delight and serves as an outlet for my creativity.
-			</About>
-		</>
-	);
+      </About>
+    </>
+  );
 };
 
 const Links = styled.div`
@@ -79,7 +79,7 @@ const Logo = styled.img`
 `;
 
 const AboutMeHeader = styled.h2`
-  font-size: 32px;
+  font-size: 28px;
   line-height: 44px;
   color: ${colors.text};
   margin: 100px 0px 0px 100px;
@@ -96,6 +96,10 @@ const About = styled.p`
   line-height: 20px;
   margin: 25px 0px 200px 100px;
   font-family: 'Hanken Grotesk', sans-serif;
+
+  @media (max-width: 768px) {
+    width: 45%;
+  }
 
   @media (max-width: 480px) {
     width: 50%;

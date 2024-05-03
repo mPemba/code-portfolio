@@ -1,29 +1,34 @@
-import React from 'react';
-import styled from 'styled-components';
-import { colors } from '../library/colors';
+import React from "react";
+import styled from "styled-components";
+import { colors } from "../library/colors";
+import saltLake from "../library/img/slc.jpeg";
 
 const AboutMe = () => {
   return (
     <>
-      <AboutMeHeader>ABOUT ME</AboutMeHeader>
+      <AboutMeHeader></AboutMeHeader>
       <Links>
-        <Link href="https://www.linkedin.com/in/mikesayer/" target="_blank" rel="noopener noreferrer">
+        <Link
+          href="https://www.linkedin.com/in/mikesayer/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Logo src="/linkedin.svg" alt="linkedin" />
         </Link>
-        <Link href="https://github.com/mPemba" target="_blank" rel="noopener noreferrer">
+        <Link
+          href="https://github.com/mPemba"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Logo src="/github.svg" alt="github" />
         </Link>
       </Links>
       <About>
-        Residing in Salt Lake City, I find immense joy in collaborative creation with like-minded individuals.
-        Building meaningful projects alongside cherished colleagues is a fulfilling endeavor that fuels my passion.
-        Outside of the software realm, I indulge in the art of
-        <span>
-          <MusicLink href="https://www.michaeljsayer.com/" target="_blank" rel="noopener noreferrer">
-            making music
-          </MusicLink>
-        </span>, which brings me great delight and serves as an outlet for my creativity.
+        Based in Salt Lake City, I&rsquo;m currently building web apps at
+        Spoonful of Comfort. When I&rsquo;m not coding, you&rsquo;ll find me on
+        the trails of City Creek Canyon or making music in my home studio.{" "}
       </About>
+      <SaltLake src={saltLake} alt="Salt Lake City" />
     </>
   );
 };
@@ -33,11 +38,6 @@ const Links = styled.div`
   gap: 20px;
   width: 20%;
   margin: 10px 0px 0px 100px;
-
-  @media (max-width: 480px) {
-    width: 50%;
-    margin: 10px 0px 0px 80px;
-  }
 `;
 
 const Link = styled.a`
@@ -56,20 +56,8 @@ const Link = styled.a`
   background: ${colors.background};
 
   &:hover {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
-`;
-
-const MusicLink = styled.a`
-	cursor: pointer;
-	color: ${colors.text};
-	background: ${colors.background};
-	font-family: 'Hanken Grotesk', sans-serif;
-  margin-left: 4px;
-
-	&:hover {
-			color: ${colors.blue};
-	}
 `;
 
 const Logo = styled.img`
@@ -83,11 +71,6 @@ const AboutMeHeader = styled.h2`
   line-height: 44px;
   color: ${colors.text};
   margin: 100px 0px 0px 100px;
-
-  @media (max-width: 480px) {
-    width: 50%;
-    margin: 100px 0px 0px 80px;
-  }
 `;
 
 const About = styled.p`
@@ -95,17 +78,13 @@ const About = styled.p`
   font-size: 14px;
   line-height: 20px;
   margin: 25px 0px 200px 100px;
-  font-family: 'Hanken Grotesk', sans-serif;
-
-  @media (max-width: 768px) {
-    width: 45%;
-  }
-
-  @media (max-width: 480px) {
-    width: 50%;
-    margin: 25px 0px 200px 80px;
-  }
+  font-family: "Hanken Grotesk", sans-serif;
 `;
 
+const SaltLake = styled.img`
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+`;
 
 export { AboutMe };

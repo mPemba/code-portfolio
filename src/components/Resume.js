@@ -37,10 +37,14 @@ const Column = styled.div`
 `;
 
 const Item = styled.div`
-  width: 50%;
+  width: 450px;
   display: flex;
   flex-direction: column;
   margin-bottom: 29px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 const Company = styled.span`

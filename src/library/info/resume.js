@@ -3,31 +3,31 @@ export const data = [
     company: "Spoonful of Comfort",
     dateRange: "2023 - present",
     description:
-      "Built a new e-commerce platform for the company in Svelte. Also helped build an internal application for managing orders.",
+      "From June - October we built and launched an E-Commerce platform using Svelte and BigCommerce. It has achieved a monthly user base of 30k-40k customers. Lead engineer on a React app in Zendesk to support the customer service team. This has included meeting with leadership, UI designs in Figma, and full stack development.",
   },
   {
     company: "Pluralsight",
     dateRange: "2021 - 2023",
     description:
-      "Currently building full stack applications for content production.",
+      "I played a key role in rebuilding an internal app used by the content department for all content production (in React). The redesign utilized a micro-frontend architecture, leveraging multiple backends to enable seamless creation of all types of content. We also rebuilt the internal tagging system for all content.",
   },
   {
     company: "A Cloud Guru",
     dateRange: "2020 - 2021",
     description:
-      "Worked on the One Platform Assessments team and helped build the quiz and exam student experiences. Also helped build the B2B checkout experience.",
+      "As a member of the One-Platform integration team, we rebuilt the quiz and exam experiences. Taking the best features from both companies, we came together and built an assessment app that still serves thousands of students. Additionally, my team rebuilt the B2B onboarding and checkout process, a user centered solution that drove key business results.",
   },
   {
     company: "Linux Academy",
     dateRange: "2019 - 2020",
     description:
-      "Rebuilt an internal app called CloudCraft for content production. Also helped maintain the community engagement experience.",
+      "The first app my team built was the student exam experience. Then we rebuilt an internal app used by the content department for all content production (in Angular). We also helped maintain and build requested features for the Cloud Community experience.",
   },
   {
     company: "Freeman",
     dateRange: "2017 - 2019",
     description:
-      "Running shows using our presentation software. Helped build an event data system for the company. Lead Engineer on Cumulus, an application for event management at hotels.",
+      "Running shows using our presentation software. Lead Engineer on an application for event management at hotels.",
   },
   {
     company: "Klowd",

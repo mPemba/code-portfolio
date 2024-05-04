@@ -6,7 +6,7 @@ import saltLake from "../library/img/slc.jpeg";
 const AboutMe = () => {
   return (
     <>
-      <AboutMeHeader></AboutMeHeader>
+      <AboutMeHeader>About Me</AboutMeHeader>
       <Links>
         <Link
           href="https://www.linkedin.com/in/mikesayer/"
@@ -79,6 +79,10 @@ const About = styled.p`
   line-height: 20px;
   margin: 25px 0px 200px 100px;
   font-family: "Hanken Grotesk", sans-serif;
+
+  @media (max-width: 768px) {
+    width: 70%;
+  }
 `;
 
 const SaltLake = styled.img`

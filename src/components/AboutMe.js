@@ -27,7 +27,7 @@ const AboutMe = () => {
         at Spoonful of Comfort. When I&rsquo;m not coding, you&rsquo;ll find me
         on the trails of City Creek Canyon or making music in my home studio.{" "}
       </About>
-      <SaltLake src="/slc.jpeg" alt="Salt Lake City" />
+      <SaltLake src="/slc.jpg" alt="Salt Lake City" />
     </>
   );
 };

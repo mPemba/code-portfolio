@@ -24,9 +24,9 @@ const AboutMe = () => {
         </Link>
       </Links>
       <About>
-        Based in Salt Lake City, I&rsquo;m currently building web apps at
-        Spoonful of Comfort. When I&rsquo;m not coding, you&rsquo;ll find me on
-        the trails of City Creek Canyon or making music in my home studio.{" "}
+        Based in Salt Lake City, I&rsquo;m currently building web applications
+        at Spoonful of Comfort. When I&rsquo;m not coding, you&rsquo;ll find me
+        on the trails of City Creek Canyon or making music in my home studio.{" "}
       </About>
       <SaltLake src={saltLake} alt="Salt Lake City" />
     </>

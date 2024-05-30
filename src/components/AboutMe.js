@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../library/colors";
-import saltLake from "../library/img/slc.jpeg";
 
 const AboutMe = () => {
   return (
@@ -28,7 +27,7 @@ const AboutMe = () => {
         at Spoonful of Comfort. When I&rsquo;m not coding, you&rsquo;ll find me
         on the trails of City Creek Canyon or making music in my home studio.{" "}
       </About>
-      <SaltLake src={saltLake} alt="Salt Lake City" />
+      <SaltLake src="/slc.jpeg" alt="Salt Lake City" />
     </>
   );
 };
